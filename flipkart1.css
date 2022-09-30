@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 56px;
+    background-color: rgb(40, 116, 240);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+nav .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+nav .header .logo {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .header .logo a {
+    color: #f0f0f0;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+nav .header .logo a:hover {
+    text-decoration: underline;
+}
+
+nav .header .logo a span {
+    color: rgb(243, 223, 13);
+}
+
+nav .header .logo img {
+    width: 75px;
+}
+
+nav .header .logo .plus {
+    width: 10px;
+}
+
+.input {
+    position: relative;
+    padding: 0 16px;
+    border: 0;
+    outline: none;
+    /* background-color: white; */
+    font-size: 14px;
+    height: 36px;
+    width: 50%;
+}
+
+.input .search-box {
+    padding: 0 3rem 0 1rem;
+    height: 100%;
+    font-size: 14px;
+    /* background-color: red; */
+    font-weight: 400;
+}
+
+.input i {
+    position: absolute;
+    top: 25%;
+    right: 6%;
+    font-size: 20px;
+    color: rgb(40, 116, 240);
+}
+
+nav .header a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav .header .login {
+    color: #2874f0;
+    font-weight: 500;
+    background-color: #fff;
+    /* cursor: pointer; */
+    border-radius: 5px;
+    /* height: 32px; */
+    padding: 5px 40px;
+    border: 1px solid #dbdbdb;
+}
+
+main {
+    margin-top: 3.5rem;
+    background-color: rgb(241, 243, 246);
+}
+
+main .carts {
+    width: 100%;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+main .carts a img {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+}
+
+main .carts a {
+    text-decoration: none;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(33, 33, 33);
+}
+
+main .carts a:hover {
+    color: rgb(13, 110, 253);
+}
+
+main .carousel {
+    margin: 10px;
+}
+
+.offer {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.offer img {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.advertiesment0 {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-around;
+}
+
+.advertiesment1 a img {
+    width: 436px;
+    height: 234px;
+}
+
+.brands .brand a img {
+    width: 400px;
+    height: 215px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.brands .brand a img:hover {
+    transform: scale(1.05);
+    /* box-shadow: 0 1px 1px 0 rgb(0 0 3 / 50%); */
+    /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
+    /* object-fit: cover; */
+}
+
+.brands .brand {
+    overflow: hidden;
+    display: flex;
+    /* padding: 10px; */
+}
+
+.brands label {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    padding: 12px;
+    font-weight: 700;
+}
+
+.brands {
+    background-color: rgb(250, 250, 250);
+    padding: 10px;
+    margin: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.electronics {
+    /* padding: 10px; */
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+    max-height: 866px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+
+.electronics .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+
+}
+
+.electronics .heading .head {
+    padding: 5px;
+    /* word-break: break-word; */
+    width: 230px;
+    /* font-size: 2rem; */
+    font-weight: 400;
+    margin-top: 5rem;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.electronics .heading .all-product {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(40, 116, 240);
+    padding: 10px 15px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+.electronics .heading .bg-image {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px bottom;
+}
+
+.electronics .products {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 10px;
+    width: calc(100% - 230px);
+}
+
+.electronics .products .product {
+    padding: 25px 15px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-height: 366px;
+    text-transform: capitalize;
+}
+
+.electronics .products .product img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: 0.5s;
+}
+
+.electronics .products .product img:hover {
+    transform: scale(1.1);
+}
+
+.electronics .products .product .name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+
+.electronics .products .product .price {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(56, 142, 60);
+}
+
+.electronics .products .product .companies {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(121, 121, 121);
+}
+
+.electronics .heading .bg-image1 {
+    background-image: url(./images/bg-image/1.webp);
+}
+
+.electronics .heading .bg-image2 {
+    background-image: url(./images/bg-image/2.webp);
+}
+
+.electronics .heading .bg-image0 {
+    background-image: url(./images/bg-image/0.webp);
+}
+
+.advertiesment2 a img {
+    width: 327px;
+    height: 134px;
+}
+
+
+footer {
+    background-color: rgb(23, 35, 55);
+}
+
+.top-side {
+    width: 100%;
+    padding: 2rem 3rem;
+    border-bottom: 1px solid rgb(69, 77, 94);
+}
+
+.top-side .left {
+    width: 60%;
+    justify-content: space-around;
+}
+
+.top-side .left section .nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-side .left section .nav a,
+.top-side .right section address {
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 2;
+    color: #fff;
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+}
+
+.top-side .left section .nav a:hover {
+    text-decoration: underline;
+}
+
+.top-side .right section address {
+    line-height: 1.6;
+}
+
+.top-side .right section address .tele-phone {
+    color: #2874f0;
+    cursor: pointer;
+}
+
+.top-side .left section h3,
+.top-side .right section h3 {
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+
+.top-side .right {
+    width: 40%;
+    justify-content: space-between;
+    border-left: 1px solid rgb(69, 77, 94);
+}
+
+.top-side .right section {
+    padding: 0 2rem;
+}
+
+.bottom {
+    justify-content: space-around;
+    padding: 2rem 3rem;
+}
+
+.bottom a,
+.bottom span {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.bottom a i {
+    padding-right: 5px;
+    color: rgb(255, 188, 0);
+}
+
+@media screen and (max-width:500px){
+    nav .header>a , nav .header .dropdown .login ,main .carts a:nth-child(5), main .carts a:last-child {
+        display: none;
+    }
+}
